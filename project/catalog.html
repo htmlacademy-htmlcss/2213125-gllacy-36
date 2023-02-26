@@ -59,6 +59,61 @@
         </ol>
         <h1 class="inner-header-title">Сливочное мороженое</h2>
       </header>
+
+      <section class="catalog-products">
+        <h2 class="catalog-title">Фильтр для товаров</h2>
+        <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
+          <fieldset class="catalog-filter-group">
+            <legend class="visually-hidden catalog-filter-title">
+              Фильтр:
+            </legend>
+            <span>Сортировка:</span>
+            <select class="catalog-filter-" name="sort">
+              <option value="popular">По популярности</option>
+              <option value="cheap">По меньшей цене</option>
+              <option value="expensive">По большей цене</option>
+            </select>
+            <label class="control">
+              Цена: 100 ₽ – 500 ₽ <input type="range" name="price" min="100" max="500">
+            </label>
+            Жирность:
+            <label class="control">
+              <input class="control-input" type="radio" name="fat" value="0"> 0%
+            </label>
+            <label class="control">
+              <input class="control-input" type="radio" name="fat" value="until 10" checked> до 10%
+            </label>
+            <label class="control">
+              <input class="control-input" type="radio" name="fat" value="until 30"> до 30%
+            </label>
+            <label class="control">
+              <input class="control-input" type="radio" name="fat" value="higher 30"> выше 30%
+            </label>
+          </fieldset>
+          <fieldset class="catalog-fieldset">
+            <legend class="catalog-filter-title">
+              Наполнители:
+            </legend>
+            <label class="control">
+              <input class="control-input" type="checkbox" name="chocolate" value="yes" checked> Шоколадные
+            </label>
+            <label class="control">
+              <input class="control-input" type="checkbox" name="sugar" value="yes" checked> Сахарные посыпки
+            </label>
+            <label class="control">
+              <input class="control-input" type="checkbox" value="yes" name="fruits"> Фрукты
+            </label>
+            <label class="control">
+              <input class="control-input" type="checkbox" value="yes" name="syrup"> Сиропы
+            </label>
+            <label class="control">
+              <input class="control-input" type="checkbox" value="yes" name="jam"> Джемы
+            </label>
+          </fieldset>
+          <button type="submit" class="button">Применить</button>
+
+        </form>
+      </section>
       
     </main>
 
